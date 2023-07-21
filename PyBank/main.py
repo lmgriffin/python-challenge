@@ -51,8 +51,8 @@ print('--------------------')
 print("Total Months: " + str(total_months))
 print("Total: " + "$" + str(total_profit_losses))
 print("Average Change: " + "$" + str(int(sum_profit_losses / (total_months - 1))))
-print("Greatest Increase in Profits: " + )
-
+print("Greatest Increase in Profits: " + str(greatest_profit_month) + " ($" + str(int(greatest_profit)) + ") ")
+print("Greatest Decrease in Profits: " + str(least_profit_month) + " ($" + str(int(least_profit)) + ") ")
 # Print other lines
 # Print out total_profit_losses
 #Print out average of profit losses, which is sum_profit_losses / (total_months - 1)
