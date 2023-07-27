@@ -55,40 +55,10 @@ with open(csvpath) as election_data:
     print("Winner: " + canidate_winner)
     print("-----------------------")
 
+with open('Analysis.txt', 'w') as text:
 
+    text.write("------------------------------\n")
+    text.write(" Election Results")
+    text.write("------------------------------\n")
+    text.write("Winner: " + str(canidate_winner))
     
-# Printing results and exporting to a text file
-# with open(file_to_output, "w") as txt_file:
-    
-#     election_result = (
-#         f"\n\nElection Result\n"
-#         f"---------------------------"
-#         f"Total Votes: {total_votes}\n"
-#         f"---------------------------")
-#     print(election_result, end="")
-
-#     # Save to txt file
-#     txt_file.write(election_result)
-#     for canidate in canidate_votes:
-#         votes = canidate_votes.get(canidate)
-#         percentage_vote = float(votes) / float(total_votes) * 100
-
-#         if (votes > count_winner):
-#             count_winner = votes
-#             canidate_winner = canidate 
-
-#         vote_output = f"{canidate}: {percentage_vote:.3f}% ({votes})\n"
-#         print(vote_output, end="")
-
-#         txt_file.write(vote_output)
-
-#     winner_summary = (
-#         f"-----------------------\n"
-#         f"Winner: {canidate_winner}\n"
-#         f"-----------------------\n")
-#     print(winner_summary)
-
-#     txt_file.write(winner_summary)
-
-
-
