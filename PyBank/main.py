@@ -53,6 +53,17 @@ print("Total: " + "$" + str(total_profit_losses))
 print("Average Change: " + "$" + str(int(sum_profit_losses / (total_months - 1))))
 print("Greatest Increase in Profits: " + str(greatest_profit_month) + " ($" + str(int(greatest_profit)) + ") ")
 print("Greatest Decrease in Profits: " + str(least_profit_month) + " ($" + str(int(least_profit)) + ") ")
+
 # Print other lines
 # Print out total_profit_losses
 #Print out average of profit losses, which is sum_profit_losses / (total_months - 1)
+
+with open('Analysis.txt', 'w') as text:
+    text.write("Financial Analysis" + "\n")
+    text.write("---------------------------------------------\n\n")
+    text.write("Total Months: " + str(total_months) + "\n")
+    text.write("Total: " + "$" + str(total_profit_losses))
+    text.write("Average Change: " + "$" + str(int(sum_profit_losses / (total_months - 1))))
+    text.write("Greatest Increase in Profits: " + str(greatest_profit_month) + " ($" + str(greatest_profit) + ") ")
+    text.write("Greatest Decrease in Profits: " + str(least_profit_month) + " ($" + str(least_profit) + ") ")
+    
